@@ -12,22 +12,22 @@
   <meta name="robots" content="index, follow">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://exploreuttarakhand.example.com/nainital.html">
+  <link rel="canonical" href="https://explore-uttarakhand-guide.netlify.app/nainital.html">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Explore Uttarakhand">
-  <meta property="og:url" content="https://exploreuttarakhand.example.com/nainital.html">
+  <meta property="og:url" content="https://explore-uttarakhand-guide.netlify.app/nainital.html">
   <meta property="og:title" content="Nainital Travel Guide | Lake City of Uttarakhand">
   <meta property="og:description" content="Plan your trip to Nainital: boating on Naini Lake, Tibetan Market, Naina Devi Temple, and verified seasonal travel tips.">
-  <meta property="og:image" content="https://exploreuttarakhand.example.com/images/destination-nainital-lake.jpg">
+  <meta property="og:image" content="https://explore-uttarakhand-guide.netlify.app/images/destination-nainital-lake.jpg">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nainital Travel Guide | Lake City of Uttarakhand">
   <meta name="twitter:description" content="Complete travel guide to Nainital: attractions, best season, boating, and scenic viewpoints.">
-  <meta name="twitter:image" content="https://exploreuttarakhand.example.com/images/destination-nainital-lake.jpg">
+  <meta name="twitter:image" content="https://explore-uttarakhand-guide.netlify.app/images/destination-nainital-lake.jpg">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -44,19 +44,19 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://exploreuttarakhand.example.com/"
+            "item": "https://explore-uttarakhand-guide.netlify.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Destinations",
-            "item": "https://exploreuttarakhand.example.com/destinations.html"
+            "item": "https://explore-uttarakhand-guide.netlify.app/destinations.html"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Nainital",
-            "item": "https://exploreuttarakhand.example.com/nainital.html"
+            "item": "https://explore-uttarakhand-guide.netlify.app/nainital.html"
           }
         ]
       },
@@ -64,8 +64,8 @@
         "@type": "TouristDestination",
         "name": "Nainital",
         "description": "Nainital is a renowned Himalayan resort town in the Kumaon region of Uttarakhand, set in a valley containing an eye-shaped lake surrounded by forested peaks.",
-        "url": "https://exploreuttarakhand.example.com/nainital.html",
-        "image": "https://exploreuttarakhand.example.com/images/destination-nainital-lake.jpg",
+        "url": "https://explore-uttarakhand-guide.netlify.app/nainital.html",
+        "image": "https://explore-uttarakhand-guide.netlify.app/images/destination-nainital-lake.jpg",
         "containedInPlace": {
           "@type": "AdministrativeArea",
           "name": "Uttarakhand, India"
@@ -143,14 +143,22 @@
     
     <!-- Hero Banner -->
     <section class="detail-hero" aria-label="Nainital Scenic Overview">
-      <img src="images/hero-detail-nainital.jpg"
-           srcset="images/destination-nainital-lake.jpg 1200w, images/hero-detail-nainital.jpg 2400w"
-           sizes="100vw"
-           alt="Vibrant colorful wooden rowboats on emerald Naini Lake surrounded by lush hills in Nainital"
-           class="detail-hero-media"
-           width="2400"
-           height="1340"
-           fetchpriority="high">
+      <picture>
+        <source type="image/avif"
+                srcset="images/hero-detail-nainital-600w.avif 600w, images/hero-detail-nainital-1200w.avif 1200w, images/hero-detail-nainital.avif 2400w"
+                sizes="100vw">
+        <source type="image/jpeg"
+                srcset="images/hero-detail-nainital-600w.jpg 600w, images/hero-detail-nainital-1200w.jpg 1200w, images/hero-detail-nainital.jpg 2400w"
+                sizes="100vw">
+        <img src="images/hero-detail-nainital.jpg"
+             srcset="images/hero-detail-nainital-600w.jpg 600w, images/hero-detail-nainital-1200w.jpg 1200w, images/hero-detail-nainital.jpg 2400w"
+             sizes="100vw"
+             alt="Vibrant colorful wooden rowboats on emerald Naini Lake surrounded by lush hills in Nainital"
+             class="detail-hero-media"
+             width="2400"
+             height="1340"
+             fetchpriority="high">
+      </picture>
       <div class="detail-hero-overlay">
         <div class="container">
           <div class="detail-hero-meta" style="margin-bottom: 8px;">
@@ -373,7 +381,10 @@
             <div style="display: flex; flex-direction: column; gap: 16px;">
               
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/destination-mussoorie-hills.jpg" alt="Mussoorie hill station" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/destination-mussoorie-hills-600w.avif 600w, images/destination-mussoorie-hills.avif 1200w">
+                  <img src="images/destination-mussoorie-hills.jpg" alt="Mussoorie hill station" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="mussoorie.html">Mussoorie</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">Queen of the Hills, Garhwal</span>
@@ -381,7 +392,10 @@
               </div>
 
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/experience-corbett-wildlife.jpg" alt="Jim Corbett National Park" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/experience-corbett-wildlife-600w.avif 600w, images/experience-corbett-wildlife.avif 1200w">
+                  <img src="images/experience-corbett-wildlife.jpg" alt="Jim Corbett National Park" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="jim-corbett.html">Jim Corbett</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">Tiger Reserve, Kumaon (65 km)</span>
@@ -389,7 +403,10 @@
               </div>
 
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/destination-rishikesh-ganga.jpg" alt="Rishikesh river bridge" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/destination-rishikesh-ganga-600w.avif 600w, images/destination-rishikesh-ganga.avif 1200w">
+                  <img src="images/destination-rishikesh-ganga.jpg" alt="Rishikesh river bridge" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="rishikesh.html">Rishikesh</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">Yoga & Adventure Capital</span>

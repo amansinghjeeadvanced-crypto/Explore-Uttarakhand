@@ -220,7 +220,8 @@ const destinationCatalog = {
     nearestStation: "Rishikesh Railway Station (approx. 250 km)",
     nearestAirport: "Jolly Grant Airport, Dehradun (approx. 270 km)",
     heroImg: "images/hero-detail-auli.jpg",
-    heroSrcset: "images/destination-auli-snow.jpg 1200w, images/hero-detail-auli.jpg 2400w",
+    heroAvifSrcset: "images/hero-detail-auli-600w.avif 600w, images/hero-detail-auli-1200w.avif 1200w, images/hero-detail-auli.avif 2400w",
+    heroSrcset: "images/hero-detail-auli-600w.jpg 600w, images/hero-detail-auli-1200w.jpg 1200w, images/hero-detail-auli.jpg 2400w",
     heroAlt: "Snow-covered ski slopes of Auli with majestic Nanda Devi Himalayan peak in background",
     overview: "Auli is India's premier high-altitude ski resort nestled in the Chamoli district of Uttarakhand. Flanked by pristine coniferous and oak forests, Auli offers breathtaking 360-degree panoramic vistas of the Himalayan giants including Nanda Devi (India's second highest peak), Kamet, Mana Parvat, and Dunagiri.",
     attractions: [
@@ -251,7 +252,8 @@ const destinationCatalog = {
     nearestStation: "Rishikesh Railway Station (approx. 215 km to Gaurikund base)",
     nearestAirport: "Jolly Grant Airport, Dehradun (approx. 235 km to Gaurikund)",
     heroImg: "images/hero-detail-kedarnath.jpg",
-    heroSrcset: "images/destination-kedarnath-temple.jpg 1200w, images/hero-detail-kedarnath.jpg 2400w",
+    heroAvifSrcset: "images/hero-detail-kedarnath-600w.avif 600w, images/hero-detail-kedarnath-1200w.avif 1200w, images/hero-detail-kedarnath.avif 2400w",
+    heroSrcset: "images/hero-detail-kedarnath-600w.jpg 600w, images/hero-detail-kedarnath-1200w.jpg 1200w, images/hero-detail-kedarnath.jpg 2400w",
     heroAlt: "Ancient Kedarnath stone temple with towering snow-clad Himalayan mountain peaks behind",
     overview: "Kedarnath is one of the twelve sacred Jyotirlingas of Lord Shiva and the most revered shrine of the Chota Char Dham circuit. Built with large, heavy grey stone slabs, the ancient eighth-century temple stands resolutely at the foot of the snow-cloaked Kedarnath Mountain along the holy Mandakini River.",
     attractions: [
@@ -282,7 +284,8 @@ const destinationCatalog = {
     nearestStation: "Haridwar / Rishikesh (approx. 220 km)",
     nearestAirport: "Jolly Grant Airport, Dehradun (approx. 225 km)",
     heroImg: "images/hero-detail-chopta.jpg",
-    heroSrcset: "images/destination-chopta-meadows.jpg 1200w, images/hero-detail-chopta.jpg 2400w",
+    heroAvifSrcset: "images/hero-detail-chopta-600w.avif 600w, images/hero-detail-chopta-1200w.avif 1200w, images/hero-detail-chopta.avif 2400w",
+    heroSrcset: "images/hero-detail-chopta-600w.jpg 600w, images/hero-detail-chopta-1200w.jpg 1200w, images/hero-detail-chopta.jpg 2400w",
     heroAlt: "Chopta lush green bugyal alpine meadow with scarlet rhododendrons and snowy Himalayan peaks",
     overview: "Affectionately called the 'Mini Switzerland of India', Chopta is an untouched hamlet nestled inside the Kedarnath Wildlife Sanctuary. Surrounded by dense deodar, pine, and rhododendron forests, it serves as the base for the rewarding trek to Tungnath—the highest Shiva temple in the world—and the Chandrashila summit.",
     attractions: [
@@ -313,7 +316,8 @@ const destinationCatalog = {
     nearestStation: "Rishikesh Railway Station (approx. 273 km to Govindghat)",
     nearestAirport: "Jolly Grant Airport, Dehradun (approx. 290 km)",
     heroImg: "images/hero-detail-valley-of-flowers.jpg",
-    heroSrcset: "images/destination-valley-of-flowers.jpg 1200w, images/hero-detail-valley-of-flowers.jpg 2400w",
+    heroAvifSrcset: "images/hero-detail-valley-of-flowers-600w.avif 600w, images/hero-detail-valley-of-flowers-1200w.avif 1200w, images/hero-detail-valley-of-flowers.avif 2400w",
+    heroSrcset: "images/hero-detail-valley-of-flowers-600w.jpg 600w, images/hero-detail-valley-of-flowers-1200w.jpg 1200w, images/hero-detail-valley-of-flowers.jpg 2400w",
     heroAlt: "Valley of Flowers National Park carpeted with vibrant alpine wildflowers and snow peaks",
     overview: "A UNESCO World Heritage Site, the Valley of Flowers National Park is an extraordinary high-altitude Himalayan valley nestled in the Pushpawati river basin. Every monsoon, over 500 species of wild Himalayan flowers bloom into an explosion of color against dramatic glaciated peaks.",
     attractions: [
@@ -344,7 +348,8 @@ const destinationCatalog = {
     nearestStation: "Haridwar Junction (connected to major Indian cities)",
     nearestAirport: "Jolly Grant Airport, Dehradun (approx. 38 km)",
     heroImg: "images/hero-detail-haridwar.jpg",
-    heroSrcset: "images/destination-haridwar-ghat.jpg 1200w, images/hero-detail-haridwar.jpg 2400w",
+    heroAvifSrcset: "images/hero-detail-haridwar-600w.avif 600w, images/hero-detail-haridwar-1200w.avif 1200w, images/hero-detail-haridwar.avif 2400w",
+    heroSrcset: "images/hero-detail-haridwar-600w.jpg 600w, images/hero-detail-haridwar-1200w.jpg 1200w, images/hero-detail-haridwar.jpg 2400w",
     heroAlt: "Har Ki Pauri ghat in Haridwar illuminated during sacred evening Ganga Aarti with floating lamps",
     overview: "Haridwar, literally meaning 'Gateway to God', is one of the seven holiest places in Hinduism. It is here that the sacred River Ganga descends from the rugged Himalayas and enters the Indo-Gangetic plains. Haridwar is celebrated for its spiritual ghats, ancient temples, and the mesmerizing evening Ganga Aarti.",
     attractions: [
@@ -375,7 +380,8 @@ const destinationCatalog = {
     nearestStation: "Ramnagar Railway Station (RMR, approx. 1-3 km)",
     nearestAirport: "Pantnagar Airport (approx. 80 km) / IGI Airport Delhi (approx. 260 km)",
     heroImg: "images/hero-detail-corbett.jpg",
-    heroSrcset: "images/experience-corbett-wildlife.jpg 1200w, images/hero-detail-corbett.jpg 2400w",
+    heroAvifSrcset: "images/hero-detail-corbett-600w.avif 600w, images/hero-detail-corbett-1200w.avif 1200w, images/hero-detail-corbett.avif 2400w",
+    heroSrcset: "images/hero-detail-corbett-600w.jpg 600w, images/hero-detail-corbett-1200w.jpg 1200w, images/hero-detail-corbett.jpg 2400w",
     heroAlt: "Majestic Royal Bengal Tiger roaming freely through the Sal forest in Jim Corbett National Park",
     overview: "Jim Corbett National Park is India's pioneer national park and premier tiger reserve, located in the Shivalik foothills along the Ramganga River. Established in 1936 as Hailey National Park, it was the historic birthplace of Project Tiger in 1973.",
     attractions: [
@@ -423,11 +429,19 @@ function initReusableDetail() {
 
   // Populate hero
   const heroImg = document.getElementById('dynHeroImg');
+  const heroSourceAvif = document.getElementById('dynHeroSourceAvif');
+  const heroSourceJpg = document.getElementById('dynHeroSourceJpg');
   const heroTitle = document.getElementById('dynTitle');
   const heroRegion = document.getElementById('dynRegion');
   const heroCategory = document.getElementById('dynCategory');
   const heroBreadcrumb = document.getElementById('dynBreadcrumb');
 
+  if (heroSourceAvif && data.heroAvifSrcset) {
+    heroSourceAvif.srcset = data.heroAvifSrcset;
+  }
+  if (heroSourceJpg && data.heroSrcset) {
+    heroSourceJpg.srcset = data.heroSrcset;
+  }
   if (heroImg) {
     heroImg.src = data.heroImg;
     if (data.heroSrcset) {

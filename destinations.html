@@ -11,23 +11,23 @@
   <meta name="author" content="Explore Uttarakhand Academic Project Team, IIIT Nagpur">
   <meta name="robots" content="index, follow">
 
-  <!-- Canonical URL (Placeholder for live deployment domain) -->
-  <link rel="canonical" href="https://exploreuttarakhand.example.com/destinations.html">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://explore-uttarakhand-guide.netlify.app/destinations.html">
 
   <!-- Open Graph / Facebook Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Explore Uttarakhand">
-  <meta property="og:url" content="https://exploreuttarakhand.example.com/destinations.html">
+  <meta property="og:url" content="https://explore-uttarakhand-guide.netlify.app/destinations.html">
   <meta property="og:title" content="Places to Visit in Uttarakhand | Hill Stations, Treks & Shrines">
   <meta property="og:description" content="Browse verified travel guides for the best destinations in Uttarakhand. Search and filter by Hill Stations, Lakes, Adventure, Spiritual & Pilgrimage, Wildlife & Nature, and Trekking.">
-  <meta property="og:image" content="https://exploreuttarakhand.example.com/images/hero-himalayas.jpg">
+  <meta property="og:image" content="https://explore-uttarakhand-guide.netlify.app/images/hero-himalayas.jpg">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Places to Visit in Uttarakhand | Destinations Guide">
   <meta name="twitter:description" content="Browse verified travel guides for the best destinations in Uttarakhand with interactive search and filters.">
-  <meta name="twitter:image" content="https://exploreuttarakhand.example.com/images/hero-himalayas.jpg">
+  <meta name="twitter:image" content="https://explore-uttarakhand-guide.netlify.app/images/hero-himalayas.jpg">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -44,13 +44,13 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://exploreuttarakhand.example.com/"
+            "item": "https://explore-uttarakhand-guide.netlify.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Destinations",
-            "item": "https://exploreuttarakhand.example.com/destinations.html"
+            "item": "https://explore-uttarakhand-guide.netlify.app/destinations.html"
           }
         ]
       },
@@ -62,50 +62,56 @@
           {
             "@type": "ListItem",
             "position": 1,
-            "url": "https://exploreuttarakhand.example.com/nainital.html",
+            "url": "https://explore-uttarakhand-guide.netlify.app/nainital.html",
             "name": "Nainital"
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "url": "https://exploreuttarakhand.example.com/mussoorie.html",
+            "url": "https://explore-uttarakhand-guide.netlify.app/mussoorie.html",
             "name": "Mussoorie"
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "url": "https://exploreuttarakhand.example.com/rishikesh.html",
+            "url": "https://explore-uttarakhand-guide.netlify.app/rishikesh.html",
             "name": "Rishikesh"
           },
           {
             "@type": "ListItem",
             "position": 4,
-            "url": "https://exploreuttarakhand.example.com/destination-details.html?id=auli",
+            "url": "https://explore-uttarakhand-guide.netlify.app/destination-details.html?id=auli",
             "name": "Auli"
           },
           {
             "@type": "ListItem",
             "position": 5,
-            "url": "https://exploreuttarakhand.example.com/destination-details.html?id=haridwar",
+            "url": "https://explore-uttarakhand-guide.netlify.app/destination-details.html?id=haridwar",
             "name": "Haridwar"
           },
           {
             "@type": "ListItem",
             "position": 6,
-            "url": "https://exploreuttarakhand.example.com/destination-details.html?id=kedarnath",
+            "url": "https://explore-uttarakhand-guide.netlify.app/destination-details.html?id=kedarnath",
             "name": "Kedarnath"
           },
           {
             "@type": "ListItem",
             "position": 7,
-            "url": "https://exploreuttarakhand.example.com/destination-details.html?id=chopta",
+            "url": "https://explore-uttarakhand-guide.netlify.app/destination-details.html?id=chopta",
             "name": "Chopta"
           },
           {
             "@type": "ListItem",
             "position": 8,
-            "url": "https://exploreuttarakhand.example.com/destination-details.html?id=valley-of-flowers",
+            "url": "https://explore-uttarakhand-guide.netlify.app/destination-details.html?id=valley-of-flowers",
             "name": "Valley of Flowers"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "url": "https://explore-uttarakhand-guide.netlify.app/jim-corbett.html",
+            "name": "Jim Corbett National Park"
           }
         ]
       }
@@ -214,7 +220,22 @@
           <!-- Destination 1: Nainital -->
           <article class="destination-card" data-category="Hill Stations, Lakes, Wildlife & Nature" data-categories="Hill Stations, Lakes, Wildlife & Nature">
             <div class="destination-img-wrapper">
-              <img src="images/destination-nainital-lake.jpg" alt="Scenic Naini Lake in Nainital Uttarakhand with emerald green water and colorful rowboats" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-nainital-lake-600w.avif 600w, images/destination-nainital-lake.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-nainital-lake-600w.jpg 600w, images/destination-nainital-lake.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-nainital-lake.jpg"
+                     srcset="images/destination-nainital-lake-600w.jpg 600w, images/destination-nainital-lake.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Scenic Naini Lake in Nainital Uttarakhand with emerald green water and colorful rowboats"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Hill Stations • Lakes • Wildlife</span>
               <span class="destination-region">Kumaon</span>
             </div>
@@ -245,7 +266,22 @@
           <!-- Destination 2: Mussoorie -->
           <article class="destination-card" data-category="Hill Stations, Wildlife & Nature" data-categories="Hill Stations, Wildlife & Nature">
             <div class="destination-img-wrapper">
-              <img src="images/destination-mussoorie-hills.jpg" alt="Misty rolling green pine hills and cottages of Mussoorie hill station with snow peaks" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-mussoorie-hills-600w.avif 600w, images/destination-mussoorie-hills.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-mussoorie-hills-600w.jpg 600w, images/destination-mussoorie-hills.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-mussoorie-hills.jpg"
+                     srcset="images/destination-mussoorie-hills-600w.jpg 600w, images/destination-mussoorie-hills.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Misty rolling green pine hills and cottages of Mussoorie hill station with snow peaks"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Hill Stations • Wildlife & Nature</span>
               <span class="destination-region">Garhwal</span>
             </div>
@@ -276,7 +312,22 @@
           <!-- Destination 3: Rishikesh -->
           <article class="destination-card" data-category="Adventure, Spiritual & Pilgrimage" data-categories="Adventure, Spiritual & Pilgrimage">
             <div class="destination-img-wrapper">
-              <img src="images/destination-rishikesh-ganga.jpg" alt="Iconic suspension bridge and temples along the holy Ganges river in Rishikesh Uttarakhand" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-rishikesh-ganga-600w.avif 600w, images/destination-rishikesh-ganga.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-rishikesh-ganga-600w.jpg 600w, images/destination-rishikesh-ganga.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-rishikesh-ganga.jpg"
+                     srcset="images/destination-rishikesh-ganga-600w.jpg 600w, images/destination-rishikesh-ganga.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Iconic suspension bridge and temples along the holy Ganges river in Rishikesh Uttarakhand"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Adventure • Spiritual & Pilgrimage</span>
               <span class="destination-region">Garhwal</span>
             </div>
@@ -307,7 +358,22 @@
           <!-- Destination 4: Auli -->
           <article class="destination-card" data-category="Hill Stations, Adventure, Trekking" data-categories="Hill Stations, Adventure, Trekking">
             <div class="destination-img-wrapper">
-              <img src="images/destination-auli-snow.jpg" alt="Pristine white snow ski slopes of Auli ski resort with snow laden pine trees and Nanda Devi peak" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-auli-snow-600w.avif 600w, images/destination-auli-snow.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-auli-snow-600w.jpg 600w, images/destination-auli-snow.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-auli-snow.jpg"
+                     srcset="images/destination-auli-snow-600w.jpg 600w, images/destination-auli-snow.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Pristine white snow ski slopes of Auli ski resort with snow laden pine trees and Nanda Devi peak"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Hill Stations • Adventure • Trekking</span>
               <span class="destination-region">Chamoli</span>
             </div>
@@ -338,7 +404,22 @@
           <!-- Destination 5: Haridwar -->
           <article class="destination-card" data-category="Spiritual & Pilgrimage" data-categories="Spiritual & Pilgrimage">
             <div class="destination-img-wrapper">
-              <img src="images/destination-haridwar-ghat.jpg" alt="Evening Ganga Aarti ceremony at Har Ki Pauri ghat in Haridwar with floating oil lamps" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-haridwar-ghat-600w.avif 600w, images/destination-haridwar-ghat.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-haridwar-ghat-600w.jpg 600w, images/destination-haridwar-ghat.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-haridwar-ghat.jpg"
+                     srcset="images/destination-haridwar-ghat-600w.jpg 600w, images/destination-haridwar-ghat.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Evening Ganga Aarti ceremony at Har Ki Pauri ghat in Haridwar with floating oil lamps"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Spiritual & Pilgrimage</span>
               <span class="destination-region">Haridwar</span>
             </div>
@@ -369,7 +450,22 @@
           <!-- Destination 6: Kedarnath -->
           <article class="destination-card" data-category="Spiritual & Pilgrimage, Trekking" data-categories="Spiritual & Pilgrimage, Trekking">
             <div class="destination-img-wrapper">
-              <img src="images/destination-kedarnath-temple.jpg" alt="Ancient Kedarnath stone temple against towering snow-covered Kedarnath peak" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-kedarnath-temple-600w.avif 600w, images/destination-kedarnath-temple.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-kedarnath-temple-600w.jpg 600w, images/destination-kedarnath-temple.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-kedarnath-temple.jpg"
+                     srcset="images/destination-kedarnath-temple-600w.jpg 600w, images/destination-kedarnath-temple.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Ancient Kedarnath stone temple against towering snow-covered Kedarnath peak"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Spiritual & Pilgrimage • Trekking</span>
               <span class="destination-region">Rudraprayag</span>
             </div>
@@ -400,7 +496,22 @@
           <!-- Destination 7: Chopta -->
           <article class="destination-card" data-category="Adventure, Trekking, Wildlife & Nature" data-categories="Adventure, Trekking, Wildlife & Nature">
             <div class="destination-img-wrapper">
-              <img src="images/destination-chopta-meadows.jpg" alt="Lush green Chopta alpine meadow bugyal blooming with red rhododendrons" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-chopta-meadows-600w.avif 600w, images/destination-chopta-meadows.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-chopta-meadows-600w.jpg 600w, images/destination-chopta-meadows.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-chopta-meadows.jpg"
+                     srcset="images/destination-chopta-meadows-600w.jpg 600w, images/destination-chopta-meadows.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Lush green Chopta alpine meadow bugyal blooming with red rhododendrons"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Adventure • Trekking • Wildlife</span>
               <span class="destination-region">Rudraprayag</span>
             </div>
@@ -431,7 +542,22 @@
           <!-- Destination 8: Valley of Flowers -->
           <article class="destination-card" data-category="Trekking, Wildlife & Nature" data-categories="Trekking, Wildlife & Nature">
             <div class="destination-img-wrapper">
-              <img src="images/destination-valley-of-flowers.jpg" alt="Vibrant carpet of alpine wildflowers blooming in Valley of Flowers National Park" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-valley-of-flowers-600w.avif 600w, images/destination-valley-of-flowers.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-valley-of-flowers-600w.jpg 600w, images/destination-valley-of-flowers.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-valley-of-flowers.jpg"
+                     srcset="images/destination-valley-of-flowers-600w.jpg 600w, images/destination-valley-of-flowers.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Vibrant carpet of alpine wildflowers blooming in Valley of Flowers National Park"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Trekking • Wildlife & Nature</span>
               <span class="destination-region">Chamoli</span>
             </div>
@@ -462,7 +588,22 @@
           <!-- Destination 9 (Bonus Wildlife): Jim Corbett National Park -->
           <article class="destination-card" data-category="Wildlife & Nature" data-categories="Wildlife & Nature">
             <div class="destination-img-wrapper">
-              <img src="images/experience-corbett-wildlife.jpg" alt="Majestic Royal Bengal Tiger roaming freely through the Sal forest in Jim Corbett National Park" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/experience-corbett-wildlife-600w.avif 600w, images/experience-corbett-wildlife.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/experience-corbett-wildlife-600w.jpg 600w, images/experience-corbett-wildlife.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/experience-corbett-wildlife.jpg"
+                     srcset="images/experience-corbett-wildlife-600w.jpg 600w, images/experience-corbett-wildlife.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Majestic Royal Bengal Tiger roaming freely through the Sal forest in Jim Corbett National Park"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Wildlife & Nature</span>
               <span class="destination-region">Nainital District</span>
             </div>

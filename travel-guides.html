@@ -11,23 +11,23 @@
   <meta name="author" content="Explore Uttarakhand Academic Project Team, IIIT Nagpur">
   <meta name="robots" content="index, follow">
 
-  <!-- Canonical URL (Placeholder) -->
-  <link rel="canonical" href="https://exploreuttarakhand.example.com/travel-guides.html">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://explore-uttarakhand-guide.netlify.app/travel-guides.html">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Explore Uttarakhand">
-  <meta property="og:url" content="https://exploreuttarakhand.example.com/travel-guides.html">
+  <meta property="og:url" content="https://explore-uttarakhand-guide.netlify.app/travel-guides.html">
   <meta property="og:title" content="Uttarakhand Travel Guides | Itineraries & Trekking Advice">
   <meta property="og:description" content="Expert-crafted travel itineraries and route plans for trekking, weekend getaways, and twin hill station adventures in Uttarakhand.">
-  <meta property="og:image" content="https://exploreuttarakhand.example.com/images/guide-trekking-himalayas.jpg">
+  <meta property="og:image" content="https://explore-uttarakhand-guide.netlify.app/images/guide-trekking-himalayas.jpg">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Uttarakhand Travel Guides & Itineraries">
   <meta name="twitter:description" content="In-depth guides for trekking, weekend getaways, and hill stations across Uttarakhand.">
-  <meta name="twitter:image" content="https://exploreuttarakhand.example.com/images/guide-trekking-himalayas.jpg">
+  <meta name="twitter:image" content="https://explore-uttarakhand-guide.netlify.app/images/guide-trekking-himalayas.jpg">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -44,21 +44,21 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://exploreuttarakhand.example.com/"
+            "item": "https://explore-uttarakhand-guide.netlify.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Travel Guides",
-            "item": "https://exploreuttarakhand.example.com/travel-guides.html"
+            "item": "https://explore-uttarakhand-guide.netlify.app/travel-guides.html"
           }
         ]
       },
       {
         "@type": "Article",
-        "@id": "https://exploreuttarakhand.example.com/travel-guides.html#trekking-guide",
+        "@id": "https://explore-uttarakhand-guide.netlify.app/travel-guides.html#trekking-guide",
         "headline": "A Beginner's Guide to Trekking in Uttarakhand: Trails, Gear & Altitude Safety",
-        "image": "https://exploreuttarakhand.example.com/images/guide-trekking-himalayas.jpg",
+        "image": "https://explore-uttarakhand-guide.netlify.app/images/guide-trekking-himalayas.jpg",
         "datePublished": "2026-03-15T08:00:00+05:30",
         "dateModified": "2026-10-28T12:00:00+05:30",
         "author": {
@@ -70,7 +70,7 @@
           "name": "Explore Uttarakhand",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://exploreuttarakhand.example.com/images/hero-himalayas.jpg"
+            "url": "https://explore-uttarakhand-guide.netlify.app/images/hero-himalayas.jpg"
           }
         },
         "description": "Essential trekking manual for novice hikers in the Garhwal and Kumaon Himalayas, covering top entry-level trails, gear checklists, and AMS prevention."
@@ -170,7 +170,22 @@
           </p>
 
           <div style="margin: 24px 0;">
-            <img src="images/hero-himalayas.jpg" alt="Majestic panoramic view of snow-covered Greater Himalayan range in Uttarakhand at sunrise" width="1200" height="675" loading="lazy" style="border-radius: var(--radius-md);">
+            <picture>
+              <source type="image/avif"
+                      srcset="images/hero-himalayas-600w.avif 600w, images/hero-himalayas.avif 1200w"
+                      sizes="(max-width: 768px) 100vw, 860px">
+              <source type="image/jpeg"
+                      srcset="images/hero-himalayas-600w.jpg 600w, images/hero-himalayas.jpg 1200w"
+                      sizes="(max-width: 768px) 100vw, 860px">
+              <img src="images/hero-himalayas.jpg"
+                   srcset="images/hero-himalayas-600w.jpg 600w, images/hero-himalayas.jpg 1200w"
+                   sizes="(max-width: 768px) 100vw, 860px"
+                   alt="Majestic panoramic view of snow-covered Greater Himalayan range in Uttarakhand at sunrise"
+                   width="1200"
+                   height="675"
+                   loading="lazy"
+                   style="border-radius: var(--radius-md);">
+            </picture>
           </div>
 
           <h3>Garhwal: The Realm of Sacred Waters & Towering Peaks</h3>
@@ -218,7 +233,22 @@
           </p>
 
           <div style="margin: 24px 0;">
-            <img src="images/guide-trekking-himalayas.jpg" alt="A group of backpackers and trekkers hiking along a high altitude mountain ridge trail in the Himalayas of Uttarakhand" width="1200" height="675" loading="lazy" style="border-radius: var(--radius-md);">
+            <picture>
+              <source type="image/avif"
+                      srcset="images/guide-trekking-himalayas-600w.avif 600w, images/guide-trekking-himalayas.avif 1200w"
+                      sizes="(max-width: 768px) 100vw, 860px">
+              <source type="image/jpeg"
+                      srcset="images/guide-trekking-himalayas-600w.jpg 600w, images/guide-trekking-himalayas.jpg 1200w"
+                      sizes="(max-width: 768px) 100vw, 860px">
+              <img src="images/guide-trekking-himalayas.jpg"
+                   srcset="images/guide-trekking-himalayas-600w.jpg 600w, images/guide-trekking-himalayas.jpg 1200w"
+                   sizes="(max-width: 768px) 100vw, 860px"
+                   alt="A group of backpackers and trekkers hiking along a high altitude mountain ridge trail in the Himalayas of Uttarakhand"
+                   width="1200"
+                   height="675"
+                   loading="lazy"
+                   style="border-radius: var(--radius-md);">
+            </picture>
           </div>
 
           <h3>Top 3 Recommended Beginner Trails</h3>
@@ -285,7 +315,22 @@
           </p>
 
           <div style="margin: 24px 0;">
-            <img src="images/destination-rishikesh-ganga.jpg" alt="Rishikesh suspension bridge over turquoise river Ganga with evening lights and temples" width="1200" height="675" loading="lazy" style="border-radius: var(--radius-md);">
+            <picture>
+              <source type="image/avif"
+                      srcset="images/destination-rishikesh-ganga-600w.avif 600w, images/destination-rishikesh-ganga.avif 1200w"
+                      sizes="(max-width: 768px) 100vw, 860px">
+              <source type="image/jpeg"
+                      srcset="images/destination-rishikesh-ganga-600w.jpg 600w, images/destination-rishikesh-ganga.jpg 1200w"
+                      sizes="(max-width: 768px) 100vw, 860px">
+              <img src="images/destination-rishikesh-ganga.jpg"
+                   srcset="images/destination-rishikesh-ganga-600w.jpg 600w, images/destination-rishikesh-ganga.jpg 1200w"
+                   sizes="(max-width: 768px) 100vw, 860px"
+                   alt="Rishikesh suspension bridge over turquoise river Ganga with evening lights and temples"
+                   width="1200"
+                   height="675"
+                   loading="lazy"
+                   style="border-radius: var(--radius-md);">
+            </picture>
           </div>
 
           <h3>Day 1: Arrival, Ashram Serenity & Triveni Ghat Aarti</h3>
@@ -329,7 +374,22 @@
           </p>
 
           <div style="margin: 24px 0;">
-            <img src="images/destination-mussoorie-hills.jpg" alt="Rolling green pine hills and scenic viewpoints of Mussoorie hill station" width="1200" height="675" loading="lazy" style="border-radius: var(--radius-md);">
+            <picture>
+              <source type="image/avif"
+                      srcset="images/destination-mussoorie-hills-600w.avif 600w, images/destination-mussoorie-hills.avif 1200w"
+                      sizes="(max-width: 768px) 100vw, 860px">
+              <source type="image/jpeg"
+                      srcset="images/destination-mussoorie-hills-600w.jpg 600w, images/destination-mussoorie-hills.jpg 1200w"
+                      sizes="(max-width: 768px) 100vw, 860px">
+              <img src="images/destination-mussoorie-hills.jpg"
+                   srcset="images/destination-mussoorie-hills-600w.jpg 600w, images/destination-mussoorie-hills.jpg 1200w"
+                   sizes="(max-width: 768px) 100vw, 860px"
+                   alt="Rolling green pine hills and scenic viewpoints of Mussoorie hill station"
+                   width="1200"
+                   height="675"
+                   loading="lazy"
+                   style="border-radius: var(--radius-md);">
+            </picture>
           </div>
 
           <h3>The Crucial Logistics: Distance Between Nainital & Mussoorie</h3>

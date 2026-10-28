@@ -11,23 +11,23 @@
   <meta name="author" content="Explore Uttarakhand Academic Project Team, IIIT Nagpur">
   <meta name="robots" content="index, follow">
 
-  <!-- Canonical URL (Placeholder) -->
-  <link rel="canonical" href="https://exploreuttarakhand.example.com/about.html">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://explore-uttarakhand-guide.netlify.app/about.html">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Explore Uttarakhand">
-  <meta property="og:url" content="https://exploreuttarakhand.example.com/about.html">
+  <meta property="og:url" content="https://explore-uttarakhand-guide.netlify.app/about.html">
   <meta property="og:title" content="About Explore Uttarakhand | Sustainable Himalayan Tourism">
   <meta property="og:description" content="Learn about our mission to advocate responsible travel, protect fragile mountain ecosystems, and provide verified guidance for Uttarakhand.">
-  <meta property="og:image" content="https://exploreuttarakhand.example.com/images/about-uttarakhand-heritage.jpg">
+  <meta property="og:image" content="https://explore-uttarakhand-guide.netlify.app/images/about-uttarakhand-heritage.jpg">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About Explore Uttarakhand">
   <meta name="twitter:description" content="Learn about our mission to advocate responsible travel and protect fragile mountain ecosystems.">
-  <meta name="twitter:image" content="https://exploreuttarakhand.example.com/images/about-uttarakhand-heritage.jpg">
+  <meta name="twitter:image" content="https://explore-uttarakhand-guide.netlify.app/images/about-uttarakhand-heritage.jpg">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -44,26 +44,26 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://exploreuttarakhand.example.com/"
+            "item": "https://explore-uttarakhand-guide.netlify.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "About",
-            "item": "https://exploreuttarakhand.example.com/about.html"
+            "item": "https://explore-uttarakhand-guide.netlify.app/about.html"
           }
         ]
       },
       {
         "@type": "AboutPage",
-        "@id": "https://exploreuttarakhand.example.com/about.html#aboutpage",
-        "url": "https://exploreuttarakhand.example.com/about.html",
+        "@id": "https://explore-uttarakhand-guide.netlify.app/about.html#aboutpage",
+        "url": "https://explore-uttarakhand-guide.netlify.app/about.html",
         "name": "About Explore Uttarakhand",
         "description": "Information about the Explore Uttarakhand digital travel portal, its responsible tourism advocacy, and academic origins.",
         "publisher": {
           "@type": "Organization",
           "name": "Explore Uttarakhand",
-          "url": "https://exploreuttarakhand.example.com/"
+          "url": "https://explore-uttarakhand-guide.netlify.app/"
         }
       }
     ]
@@ -149,7 +149,21 @@
             </p>
           </div>
           <div class="about-image-wrapper">
-            <img src="images/about-uttarakhand-heritage.jpg" alt="Traditional slate-roofed wooden mountain house in Uttarakhand village with snow mountains" width="1200" height="675" loading="lazy">
+            <picture>
+              <source type="image/avif"
+                      srcset="images/about-uttarakhand-heritage-600w.avif 600w, images/about-uttarakhand-heritage.avif 1200w"
+                      sizes="(max-width: 768px) 100vw, 560px">
+              <source type="image/jpeg"
+                      srcset="images/about-uttarakhand-heritage-600w.jpg 600w, images/about-uttarakhand-heritage.jpg 1200w"
+                      sizes="(max-width: 768px) 100vw, 560px">
+              <img src="images/about-uttarakhand-heritage.jpg"
+                   srcset="images/about-uttarakhand-heritage-600w.jpg 600w, images/about-uttarakhand-heritage.jpg 1200w"
+                   sizes="(max-width: 768px) 100vw, 560px"
+                   alt="Traditional slate-roofed wooden mountain house in Uttarakhand village with snow mountains"
+                   width="1200"
+                   height="675"
+                   loading="lazy">
+            </picture>
           </div>
         </div>
 

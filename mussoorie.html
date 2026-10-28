@@ -12,22 +12,22 @@
   <meta name="robots" content="index, follow">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://exploreuttarakhand.example.com/mussoorie.html">
+  <link rel="canonical" href="https://explore-uttarakhand-guide.netlify.app/mussoorie.html">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Explore Uttarakhand">
-  <meta property="og:url" content="https://exploreuttarakhand.example.com/mussoorie.html">
+  <meta property="og:url" content="https://explore-uttarakhand-guide.netlify.app/mussoorie.html">
   <meta property="og:title" content="Mussoorie Travel Guide | Queen of the Hills">
   <meta property="og:description" content="Plan your trip to Mussoorie and peaceful Landour: viewpoints, colonial history, Kempty Falls, and seasonal travel advice.">
-  <meta property="og:image" content="https://exploreuttarakhand.example.com/images/destination-mussoorie-hills.jpg">
+  <meta property="og:image" content="https://explore-uttarakhand-guide.netlify.app/images/destination-mussoorie-hills.jpg">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mussoorie Travel Guide | Queen of the Hills">
   <meta name="twitter:description" content="Complete travel guide to Mussoorie: attractions, weather, Landour walks, and scenic viewpoints.">
-  <meta name="twitter:image" content="https://exploreuttarakhand.example.com/images/destination-mussoorie-hills.jpg">
+  <meta name="twitter:image" content="https://explore-uttarakhand-guide.netlify.app/images/destination-mussoorie-hills.jpg">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -44,19 +44,19 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://exploreuttarakhand.example.com/"
+            "item": "https://explore-uttarakhand-guide.netlify.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Destinations",
-            "item": "https://exploreuttarakhand.example.com/destinations.html"
+            "item": "https://explore-uttarakhand-guide.netlify.app/destinations.html"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Mussoorie",
-            "item": "https://exploreuttarakhand.example.com/mussoorie.html"
+            "item": "https://explore-uttarakhand-guide.netlify.app/mussoorie.html"
           }
         ]
       },
@@ -64,8 +64,8 @@
         "@type": "TouristDestination",
         "name": "Mussoorie",
         "description": "Mussoorie is a legendary hill station in Dehradun district of Uttarakhand, perched atop a horseshoe ridge in the Garhwal Himalayas overlooking the Doon Valley.",
-        "url": "https://exploreuttarakhand.example.com/mussoorie.html",
-        "image": "https://exploreuttarakhand.example.com/images/destination-mussoorie-hills.jpg",
+        "url": "https://explore-uttarakhand-guide.netlify.app/mussoorie.html",
+        "image": "https://explore-uttarakhand-guide.netlify.app/images/destination-mussoorie-hills.jpg",
         "containedInPlace": {
           "@type": "AdministrativeArea",
           "name": "Uttarakhand, India"
@@ -143,14 +143,22 @@
     
     <!-- Hero Banner -->
     <section class="detail-hero" aria-label="Mussoorie Scenic Overview">
-      <img src="images/hero-detail-mussoorie.jpg"
-           srcset="images/destination-mussoorie-hills.jpg 1200w, images/hero-detail-mussoorie.jpg 2400w"
-           sizes="100vw"
-           alt="Panoramic view of Mussoorie hill ridges with misty pine slopes and snow-capped Himalayan peaks"
-           class="detail-hero-media"
-           width="2400"
-           height="1340"
-           fetchpriority="high">
+      <picture>
+        <source type="image/avif"
+                srcset="images/hero-detail-mussoorie-600w.avif 600w, images/hero-detail-mussoorie-1200w.avif 1200w, images/hero-detail-mussoorie.avif 2400w"
+                sizes="100vw">
+        <source type="image/jpeg"
+                srcset="images/hero-detail-mussoorie-600w.jpg 600w, images/hero-detail-mussoorie-1200w.jpg 1200w, images/hero-detail-mussoorie.jpg 2400w"
+                sizes="100vw">
+        <img src="images/hero-detail-mussoorie.jpg"
+             srcset="images/hero-detail-mussoorie-600w.jpg 600w, images/hero-detail-mussoorie-1200w.jpg 1200w, images/hero-detail-mussoorie.jpg 2400w"
+             sizes="100vw"
+             alt="Panoramic view of Mussoorie hill ridges with misty pine slopes and snow-capped Himalayan peaks"
+             class="detail-hero-media"
+             width="2400"
+             height="1340"
+             fetchpriority="high">
+      </picture>
       <div class="detail-hero-overlay">
         <div class="container">
           <div class="detail-hero-meta" style="margin-bottom: 8px;">
@@ -373,7 +381,10 @@
             <div style="display: flex; flex-direction: column; gap: 16px;">
               
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/destination-rishikesh-ganga.jpg" alt="Rishikesh river bridge" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/destination-rishikesh-ganga-600w.avif 600w, images/destination-rishikesh-ganga.avif 1200w">
+                  <img src="images/destination-rishikesh-ganga.jpg" alt="Rishikesh river bridge" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="rishikesh.html">Rishikesh</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">River Rafting & Yoga (75 km)</span>
@@ -381,7 +392,10 @@
               </div>
 
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/destination-nainital-lake.jpg" alt="Nainital Lake" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/destination-nainital-lake-600w.avif 600w, images/destination-nainital-lake.avif 1200w">
+                  <img src="images/destination-nainital-lake.jpg" alt="Nainital Lake" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="nainital.html">Nainital</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">Lake City, Kumaon</span>
@@ -389,7 +403,10 @@
               </div>
 
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/destination-haridwar-ghat.jpg" alt="Haridwar Ganga Aarti" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/destination-haridwar-ghat-600w.avif 600w, images/destination-haridwar-ghat.avif 1200w">
+                  <img src="images/destination-haridwar-ghat.jpg" alt="Haridwar Ganga Aarti" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="destination-details.html?id=haridwar">Haridwar</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">Spiritual Gateway (85 km)</span>

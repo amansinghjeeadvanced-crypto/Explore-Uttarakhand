@@ -12,22 +12,22 @@
   <meta name="robots" content="index, follow">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://exploreuttarakhand.example.com/jim-corbett.html">
+  <link rel="canonical" href="https://explore-uttarakhand-guide.netlify.app/jim-corbett.html">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Explore Uttarakhand">
-  <meta property="og:url" content="https://exploreuttarakhand.example.com/jim-corbett.html">
+  <meta property="og:url" content="https://explore-uttarakhand-guide.netlify.app/jim-corbett.html">
   <meta property="og:title" content="Jim Corbett National Park Travel Guide | India's Pioneer Tiger Reserve">
   <meta property="og:description" content="Plan your safari in Jim Corbett National Park: Dhikala and Bijrani zones, elephant herds, verified seasons, and official booking guidelines.">
-  <meta property="og:image" content="https://exploreuttarakhand.example.com/images/hero-detail-corbett.jpg">
+  <meta property="og:image" content="https://explore-uttarakhand-guide.netlify.app/images/hero-detail-corbett.jpg">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Jim Corbett National Park Travel Guide">
   <meta name="twitter:description" content="Explore safari zones, seasonal weather advice, and ethical wildlife guidelines for Jim Corbett National Park.">
-  <meta name="twitter:image" content="https://exploreuttarakhand.example.com/images/hero-detail-corbett.jpg">
+  <meta name="twitter:image" content="https://explore-uttarakhand-guide.netlify.app/images/hero-detail-corbett.jpg">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -44,19 +44,19 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://exploreuttarakhand.example.com/"
+            "item": "https://explore-uttarakhand-guide.netlify.app/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Destinations",
-            "item": "https://exploreuttarakhand.example.com/destinations.html"
+            "item": "https://explore-uttarakhand-guide.netlify.app/destinations.html"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Jim Corbett National Park",
-            "item": "https://exploreuttarakhand.example.com/jim-corbett.html"
+            "item": "https://explore-uttarakhand-guide.netlify.app/jim-corbett.html"
           }
         ]
       },
@@ -64,8 +64,8 @@
         "@type": "TouristDestination",
         "name": "Jim Corbett National Park",
         "description": "Jim Corbett National Park is India's oldest national park and premier tiger reserve, located in the Shivalik foothills of Uttarakhand along the Ramganga River.",
-        "url": "https://exploreuttarakhand.example.com/jim-corbett.html",
-        "image": "https://exploreuttarakhand.example.com/images/hero-detail-corbett.jpg",
+        "url": "https://explore-uttarakhand-guide.netlify.app/jim-corbett.html",
+        "image": "https://explore-uttarakhand-guide.netlify.app/images/hero-detail-corbett.jpg",
         "containedInPlace": {
           "@type": "AdministrativeArea",
           "name": "Uttarakhand, India"
@@ -144,14 +144,22 @@
     
     <!-- Hero Banner -->
     <section class="detail-hero" aria-label="Jim Corbett National Park Overview">
-      <img src="images/hero-detail-corbett.jpg"
-           srcset="images/experience-corbett-wildlife.jpg 1200w, images/hero-detail-corbett.jpg 2400w"
-           sizes="100vw"
-           alt="Majestic Royal Bengal Tiger roaming freely through the dense Sal forest in Jim Corbett National Park"
-           class="detail-hero-media"
-           width="2400"
-           height="1340"
-           fetchpriority="high">
+      <picture>
+        <source type="image/avif"
+                srcset="images/hero-detail-corbett-600w.avif 600w, images/hero-detail-corbett-1200w.avif 1200w, images/hero-detail-corbett.avif 2400w"
+                sizes="100vw">
+        <source type="image/jpeg"
+                srcset="images/hero-detail-corbett-600w.jpg 600w, images/hero-detail-corbett-1200w.jpg 1200w, images/hero-detail-corbett.jpg 2400w"
+                sizes="100vw">
+        <img src="images/hero-detail-corbett.jpg"
+             srcset="images/hero-detail-corbett-600w.jpg 600w, images/hero-detail-corbett-1200w.jpg 1200w, images/hero-detail-corbett.jpg 2400w"
+             sizes="100vw"
+             alt="Majestic Royal Bengal Tiger roaming freely through the dense Sal forest in Jim Corbett National Park"
+             class="detail-hero-media"
+             width="2400"
+             height="1340"
+             fetchpriority="high">
+      </picture>
       <div class="detail-hero-overlay">
         <div class="container">
           <div class="detail-hero-meta" style="margin-bottom: 8px;">
@@ -406,7 +414,10 @@
             <div style="display: flex; flex-direction: column; gap: 16px;">
               
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/destination-nainital-lake.jpg" alt="Nainital Lake City" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/destination-nainital-lake-600w.avif 600w, images/destination-nainital-lake.avif 1200w">
+                  <img src="images/destination-nainital-lake.jpg" alt="Nainital Lake City" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="nainital.html">Nainital</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">Lake City, Kumaon (65 km)</span>
@@ -414,7 +425,10 @@
               </div>
 
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/destination-rishikesh-ganga.jpg" alt="Rishikesh river bridge" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/destination-rishikesh-ganga-600w.avif 600w, images/destination-rishikesh-ganga.avif 1200w">
+                  <img src="images/destination-rishikesh-ganga.jpg" alt="Rishikesh river bridge" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="rishikesh.html">Rishikesh</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">Yoga &amp; Foothills Gateway (140 km)</span>
@@ -422,7 +436,10 @@
               </div>
 
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/destination-chopta-meadows.jpg" alt="Chopta meadows" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/destination-chopta-meadows-600w.avif 600w, images/destination-chopta-meadows.avif 1200w">
+                  <img src="images/destination-chopta-meadows.jpg" alt="Chopta meadows" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="destination-details.html?id=chopta">Chopta</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">Meadows &amp; Kedarnath Sanctuary</span>
@@ -430,7 +447,10 @@
               </div>
 
               <div style="display: flex; gap: 12px; align-items: center;">
-                <img src="images/destination-valley-of-flowers.jpg" alt="Valley of Flowers" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                <picture>
+                  <source type="image/avif" srcset="images/destination-valley-of-flowers-600w.avif 600w, images/destination-valley-of-flowers.avif 1200w">
+                  <img src="images/destination-valley-of-flowers.jpg" alt="Valley of Flowers" width="72" height="54" loading="lazy" style="width: 72px; height: 54px; object-fit: cover; border-radius: 6px;">
+                </picture>
                 <div>
                   <h4 style="font-size: 1rem; margin-bottom: 2px;"><a href="destination-details.html?id=valley-of-flowers">Valley of Flowers</a></h4>
                   <span style="font-size: 0.8rem; color: var(--color-text-light);">UNESCO Alpine Floral Sanctuary</span>

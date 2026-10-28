@@ -3,6 +3,7 @@
 > **UI/UX & Technical On-Page SEO Assignment**  
 > **Institution:** Indian Institute of Information Technology, Nagpur (IIIT Nagpur)  
 > **Student Author:** Aman Singh  
+> **Live Deployed URL:** [https://explore-uttarakhand-guide.netlify.app/](https://explore-uttarakhand-guide.netlify.app/)  
 > **Technology Stack:** Semantic HTML5, Modern CSS3, Vanilla JavaScript (ES6+)  
 > **No External Frameworks or Backend Dependencies Required**
 
@@ -79,7 +80,7 @@ Explore Uttarakhand/
 │   └── style.css                # Centralized CSS design system, responsive rules & animations
 ├── js/
 │   └── script.js                # Vanilla JavaScript (Navigation, search filters, form validation)
-└── images/                      # Optimized 1200px 16:9 photography (Zero layout shift)
+└── images/                      # Optimized 1200px 16:9 photography (Explicit dimensions to reduce layout shifts)
     ├── hero-himalayas.jpg
     ├── destination-nainital-lake.jpg
     ├── destination-mussoorie-hills.jpg
@@ -170,12 +171,12 @@ Every technique requested in your assignment prompt has been implemented directl
 | **Meta Descriptions** | Unique, engaging summaries between 150–165 characters that encourage user click-through rates. |
 | **Semantic HTML5** | Strict hierarchy using `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, and `<footer>`. Exactly one semantic `<h1>` per page. |
 | **Keyword Placement** | Natural inclusion of terms like *"places to visit in Uttarakhand"*, *"Uttarakhand travel guide"*, and *"Himalayan hill stations"* in headings, body prose, and anchor text without keyword stuffing. |
-| **Image SEO & Performance** | Descriptive hyphenated filenames (`hero-detail-nainital.jpg`, `destination-nainital-lake.jpg`), rich contextual `alt` text, explicit dimension attributes (`width="2400"` & `height="1340"` for heroes, `width="1200"` & `height="675"` for cards) eliminating Cumulative Layout Shift (CLS = 0), responsive `srcset` across breakpoints, and `loading="lazy"` on below-the-fold assets. |
+| **Image SEO & Performance** | Next-generation AVIF format with progressive JPEG fallback via `<picture>`, descriptive hyphenated filenames, rich contextual `alt` text, explicit dimension attributes (`width="2400"` & `height="1340"` for heroes, `width="1200"` & `height="675"` for cards, `width="72"` & `height="54"` for thumbnails) to prevent layout shifts (actual CLS to be verified with tools like Google PageSpeed Insights), responsive `srcset` (600w, 1200w, 2400w) serving 85% lighter images to mobile devices, and `loading="lazy"` on all below-the-fold assets while hero images load eagerly with `fetchpriority="high"`. |
 | **Internal Linking** | Contextual cross-links between destinations and guides (e.g., Nainital links to Mussoorie and the Twin Station Guide; Rishikesh links to Haridwar and the Weekend Guide). |
-| **Canonical URLs** | Clearly marked `<link rel="canonical" href="https://exploreuttarakhand.example.com/...">` tags on every page ready for production domain swap. |
+| **Canonical URLs** | Clearly marked `<link rel="canonical" href="https://explore-uttarakhand-guide.netlify.app/...">` tags on every page pointing to the authoritative live URL. |
 | **Open Graph & Twitter** | Complete `og:title`, `og:description`, `og:image`, `og:type`, and `twitter:card` tags for social sharing. |
 | **Robots.txt** | Clean crawling permissions allowing all search bots to index the site and assets while disallowing `/404.html` and pointing to `sitemap.xml`. |
-| **XML Sitemap** | Standard XML sitemap (`sitemap.xml`) listing all 8 canonical URLs with `<lastmod>`, `<changefreq>`, and `<priority>`. |
+| **XML Sitemap** | Standard XML sitemap (`sitemap.xml`) listing all 9 canonical URLs with `<lastmod>`, `<changefreq>`, and `<priority>`. |
 | **Structured Data** | Valid Schema.org JSON-LD implementing `WebSite`, `Organization`, `TouristDestination`, `ItemList`, `Article`, and `BreadcrumbList`. |
 | **Accessibility (a11y)** | Visible keyboard `:focus-visible` styles, skip-to-content link, high contrast ratios, and screen-reader accessible ARIA labels. |
 
@@ -186,7 +187,7 @@ Every technique requested in your assignment prompt has been implemented directl
 When presenting this project at IIIT Nagpur, use these simple, technically sound explanations:
 
 1. **"Why did you choose vanilla HTML, CSS, and JavaScript instead of React or Next.js?"**  
-   *Answer:* "For content-driven tourism and informational websites, vanilla HTML5 delivers optimal SEO and performance. Static HTML documents are immediately indexable by every search engine crawler without requiring client-side JavaScript execution or server hydration overhead. This guarantees near-instant First Contentful Paint (FCP) and a Cumulative Layout Shift (CLS) of zero."
+   *Answer:* "For content-driven tourism and informational websites, vanilla HTML5 delivers optimal SEO and performance. Static HTML documents are immediately indexable by every search engine crawler without requiring client-side JavaScript execution or server hydration overhead. This minimizes blocking times and provides a lightweight structure to reduce layout shifts, though real-world Core Web Vitals must be measured via Google PageSpeed Insights."
 
 2. **"How did you prevent layout shifts (CLS) with large photography?"**  
    *Answer:* "Every `<img>` tag specifies explicit `width="1200"` and `height="675"` attributes matching the 16:9 aspect ratio of the underlying photograph. Modern browsers calculate the aspect ratio and reserve the exact layout space before the image bytes finish downloading, preventing content jumping."

@@ -1,7 +1,7 @@
 # ==============================================================================
 # Explore Uttarakhand — robots.txt
 # Technical On-Page SEO Configuration
-# Note: Replace 'https://exploreuttarakhand.example.com/' with your live domain upon hosting.
+# Deployed live on Netlify: https://explore-uttarakhand-guide.netlify.app/
 # ==============================================================================
 
 User-agent: *
@@ -11,4 +11,4 @@ Allow: /
 Disallow: /404.html
 
 # XML Sitemap Location
-Sitemap: https://exploreuttarakhand.example.com/sitemap.xml
+Sitemap: https://explore-uttarakhand-guide.netlify.app/sitemap.xml

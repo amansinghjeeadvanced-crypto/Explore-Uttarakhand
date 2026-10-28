@@ -5,29 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Primary SEO Meta Tags -->
-  <title>Explore Uttarakhand | Official Travel Guide to the Land of the Gods</title>
+  <title>Uttarakhand Travel Guide | Explore Uttarakhand</title>
   <meta name="description" content="Discover the beauty of Uttarakhand with our comprehensive travel guide. Explore Himalayan hill stations, sacred pilgrimage sites, trekking routes, and serene lakes.">
   <meta name="keywords" content="Uttarakhand travel guide, places to visit in Uttarakhand, Uttarakhand tourism, Devbhoomi, Himalayan treks, Nainital, Mussoorie, Rishikesh, Kedarnath">
   <meta name="author" content="Explore Uttarakhand Academic Project Team, IIIT Nagpur">
   <meta name="robots" content="index, follow">
   
-  <!-- Canonical URL (Placeholder for live deployment domain) -->
-  <link rel="canonical" href="https://exploreuttarakhand.example.com/">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://explore-uttarakhand-guide.netlify.app/">
 
   <!-- Open Graph / Facebook Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Explore Uttarakhand">
-  <meta property="og:url" content="https://exploreuttarakhand.example.com/">
-  <meta property="og:title" content="Explore Uttarakhand | Official Travel Guide to the Land of the Gods">
+  <meta property="og:url" content="https://explore-uttarakhand-guide.netlify.app/">
+  <meta property="og:title" content="Uttarakhand Travel Guide | Explore Uttarakhand">
   <meta property="og:description" content="Plan your journey across the snow-capped Himalayas, emerald glacial lakes, ancient temples, and roaring rivers of Uttarakhand.">
-  <meta property="og:image" content="https://exploreuttarakhand.example.com/images/hero-himalayas.jpg">
+  <meta property="og:image" content="https://explore-uttarakhand-guide.netlify.app/images/hero-himalayas.jpg">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Explore Uttarakhand | Official Travel Guide">
+  <meta name="twitter:title" content="Uttarakhand Travel Guide | Explore Uttarakhand">
   <meta name="twitter:description" content="Plan your journey across the snow-capped Himalayas, emerald glacial lakes, ancient temples, and roaring rivers of Uttarakhand.">
-  <meta name="twitter:image" content="https://exploreuttarakhand.example.com/images/hero-himalayas.jpg">
+  <meta name="twitter:image" content="https://explore-uttarakhand-guide.netlify.app/images/hero-himalayas.jpg">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -39,23 +39,23 @@
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://exploreuttarakhand.example.com/#website",
-        "url": "https://exploreuttarakhand.example.com/",
+        "@id": "https://explore-uttarakhand-guide.netlify.app/#website",
+        "url": "https://explore-uttarakhand-guide.netlify.app/",
         "name": "Explore Uttarakhand",
         "description": "Comprehensive travel guide for tourism in Uttarakhand, India.",
         "inLanguage": "en-IN",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://exploreuttarakhand.example.com/destinations.html?search={search_term_string}",
+          "target": "https://explore-uttarakhand-guide.netlify.app/destinations.html?search={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       },
       {
         "@type": "Organization",
-        "@id": "https://exploreuttarakhand.example.com/#organization",
+        "@id": "https://explore-uttarakhand-guide.netlify.app/#organization",
         "name": "Explore Uttarakhand Tourism Project",
-        "url": "https://exploreuttarakhand.example.com/",
-        "logo": "https://exploreuttarakhand.example.com/images/hero-himalayas.jpg",
+        "url": "https://explore-uttarakhand-guide.netlify.app/",
+        "logo": "https://explore-uttarakhand-guide.netlify.app/images/hero-himalayas.jpg",
         "description": "An educational UI/UX and On-Page SEO tourism initiative at the Indian Institute of Information Technology, Nagpur."
       }
     ]
@@ -109,7 +109,22 @@
     <!-- Hero Section -->
     <section class="hero" aria-label="Discover Uttarakhand Hero">
       <div class="hero-bg-wrapper">
-        <img src="images/hero-himalayas.jpg" alt="Golden morning sunlight illuminating snow-capped Himalayan mountain peaks in Uttarakhand with alpine pine trees" class="hero-bg-img" width="1200" height="675" fetchpriority="high">
+        <picture>
+          <source type="image/avif"
+                  srcset="images/hero-himalayas-600w.avif 600w, images/hero-himalayas.avif 1200w"
+                  sizes="100vw">
+          <source type="image/jpeg"
+                  srcset="images/hero-himalayas-600w.jpg 600w, images/hero-himalayas.jpg 1200w"
+                  sizes="100vw">
+          <img src="images/hero-himalayas.jpg"
+               srcset="images/hero-himalayas-600w.jpg 600w, images/hero-himalayas.jpg 1200w"
+               sizes="100vw"
+               alt="Golden morning sunlight illuminating snow-capped Himalayan mountain peaks in Uttarakhand with alpine pine trees"
+               class="hero-bg-img"
+               width="1200"
+               height="675"
+               fetchpriority="high">
+        </picture>
         <div class="hero-overlay"></div>
       </div>
       <div class="container hero-content">
@@ -203,7 +218,21 @@
             </div>
           </div>
           <div class="about-image-wrapper">
-            <img src="images/about-uttarakhand-heritage.jpg" alt="Traditional slate-roofed wooden mountain house nestled in terraced agricultural fields in Uttarakhand" width="1200" height="675" loading="lazy">
+            <picture>
+              <source type="image/avif"
+                      srcset="images/about-uttarakhand-heritage-600w.avif 600w, images/about-uttarakhand-heritage.avif 1200w"
+                      sizes="(max-width: 768px) 100vw, 560px">
+              <source type="image/jpeg"
+                      srcset="images/about-uttarakhand-heritage-600w.jpg 600w, images/about-uttarakhand-heritage.jpg 1200w"
+                      sizes="(max-width: 768px) 100vw, 560px">
+              <img src="images/about-uttarakhand-heritage.jpg"
+                   srcset="images/about-uttarakhand-heritage-600w.jpg 600w, images/about-uttarakhand-heritage.jpg 1200w"
+                   sizes="(max-width: 768px) 100vw, 560px"
+                   alt="Traditional slate-roofed wooden mountain house nestled in terraced agricultural fields in Uttarakhand"
+                   width="1200"
+                   height="675"
+                   loading="lazy">
+            </picture>
           </div>
         </div>
       </div>
@@ -306,7 +335,22 @@
           <!-- Card 1: Nainital -->
           <article class="destination-card">
             <div class="destination-img-wrapper">
-              <img src="images/destination-nainital-lake.jpg" alt="Vibrant colorful wooden rowboats floating peacefully on emerald Naini Lake surrounded by forested hill slopes" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-nainital-lake-600w.avif 600w, images/destination-nainital-lake.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-nainital-lake-600w.jpg 600w, images/destination-nainital-lake.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-nainital-lake.jpg"
+                     srcset="images/destination-nainital-lake-600w.jpg 600w, images/destination-nainital-lake.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Vibrant colorful wooden rowboats floating peacefully on emerald Naini Lake surrounded by forested hill slopes"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Hill Stations • Lakes • Wildlife</span>
               <span class="destination-region">Kumaon</span>
             </div>
@@ -337,7 +381,22 @@
           <!-- Card 2: Mussoorie -->
           <article class="destination-card">
             <div class="destination-img-wrapper">
-              <img src="images/destination-mussoorie-hills.jpg" alt="Picturesque hill town of Mussoorie overlooking misty mountain valleys and distant snow-clad Himalayan peaks" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-mussoorie-hills-600w.avif 600w, images/destination-mussoorie-hills.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-mussoorie-hills-600w.jpg 600w, images/destination-mussoorie-hills.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-mussoorie-hills.jpg"
+                     srcset="images/destination-mussoorie-hills-600w.jpg 600w, images/destination-mussoorie-hills.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Picturesque hill town of Mussoorie overlooking misty mountain valleys and distant snow-clad Himalayan peaks"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Hill Stations • Wildlife & Nature</span>
               <span class="destination-region">Garhwal</span>
             </div>
@@ -368,7 +427,22 @@
           <!-- Card 3: Rishikesh -->
           <article class="destination-card">
             <div class="destination-img-wrapper">
-              <img src="images/destination-rishikesh-ganga.jpg" alt="Iconic suspension bridge stretching across the turquoise holy Ganga river flanked by temples and green Himalayan hills in Rishikesh" class="destination-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-rishikesh-ganga-600w.avif 600w, images/destination-rishikesh-ganga.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-rishikesh-ganga-600w.jpg 600w, images/destination-rishikesh-ganga.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-rishikesh-ganga.jpg"
+                     srcset="images/destination-rishikesh-ganga-600w.jpg 600w, images/destination-rishikesh-ganga.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Iconic suspension bridge stretching across the turquoise holy Ganga river flanked by temples and green Himalayan hills in Rishikesh"
+                     class="destination-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="destination-badge">Adventure • Spiritual & Pilgrimage</span>
               <span class="destination-region">Garhwal</span>
             </div>
@@ -420,7 +494,22 @@
           
           <div class="guide-card">
             <div class="guide-img-box">
-              <img src="images/destination-auli-snow.jpg" alt="Snowboarders and skiers on snowy slopes of Auli ski resort in winter" class="guide-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-auli-snow-600w.avif 600w, images/destination-auli-snow.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-auli-snow-600w.jpg 600w, images/destination-auli-snow.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-auli-snow.jpg"
+                     srcset="images/destination-auli-snow-600w.jpg 600w, images/destination-auli-snow.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Snowboarders and skiers on snowy slopes of Auli ski resort in winter"
+                     class="guide-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="guide-category-tag">Winter Sports</span>
             </div>
             <div class="guide-body">
@@ -434,7 +523,22 @@
 
           <div class="guide-card">
             <div class="guide-img-box">
-              <img src="images/destination-haridwar-ghat.jpg" alt="Har Ki Pauri ghat glowing with evening diyas and oil lamps during holy Ganga Aarti" class="guide-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/destination-haridwar-ghat-600w.avif 600w, images/destination-haridwar-ghat.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/destination-haridwar-ghat-600w.jpg 600w, images/destination-haridwar-ghat.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/destination-haridwar-ghat.jpg"
+                     srcset="images/destination-haridwar-ghat-600w.jpg 600w, images/destination-haridwar-ghat.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Har Ki Pauri ghat glowing with evening diyas and oil lamps during holy Ganga Aarti"
+                     class="guide-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="guide-category-tag">Spiritual Heritage</span>
             </div>
             <div class="guide-body">
@@ -448,7 +552,22 @@
 
           <div class="guide-card">
             <div class="guide-img-box">
-              <img src="images/experience-corbett-wildlife.jpg" alt="Bengal tiger walking along forested track in Jim Corbett National Park" class="guide-img" width="1200" height="675" loading="lazy">
+              <picture>
+                <source type="image/avif"
+                        srcset="images/experience-corbett-wildlife-600w.avif 600w, images/experience-corbett-wildlife.avif 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <source type="image/jpeg"
+                        srcset="images/experience-corbett-wildlife-600w.jpg 600w, images/experience-corbett-wildlife.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px">
+                <img src="images/experience-corbett-wildlife.jpg"
+                     srcset="images/experience-corbett-wildlife-600w.jpg 600w, images/experience-corbett-wildlife.jpg 1200w"
+                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+                     alt="Bengal tiger walking along forested track in Jim Corbett National Park"
+                     class="guide-img"
+                     width="1200"
+                     height="675"
+                     loading="lazy">
+              </picture>
               <span class="guide-category-tag">Wildlife Safari</span>
             </div>
             <div class="guide-body">

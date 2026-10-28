@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Destination Details & Travel Information | Explore Uttarakhand</title>
+  <meta name="description" content="Detailed travel guide and destination information for Uttarakhand: Auli, Kedarnath, Chopta, Haridwar, and Valley of Flowers. Fast facts, attractions, and weather.">
+  <meta name="keywords" content="Uttarakhand destination details, Auli skiing, Kedarnath temple, Chopta trek, Valley of Flowers, Haridwar ghats, Himalayan travel guide">
+  <meta name="author" content="Explore Uttarakhand Academic Project Team, IIIT Nagpur">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL (Placeholder) -->
+  <link rel="canonical" href="https://exploreuttarakhand.example.com/destination-details.html">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Explore Uttarakhand">
+  <meta property="og:url" content="https://exploreuttarakhand.example.com/destination-details.html">
+  <meta property="og:title" content="Destination Details & Travel Information | Explore Uttarakhand">
+  <meta property="og:description" content="Explore comprehensive itineraries, seasonal weather, and travel tips for Uttarakhand's premier Himalayan destinations.">
+  <meta property="og:image" content="https://exploreuttarakhand.example.com/images/hero-himalayas.jpg">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Destination Details | Explore Uttarakhand">
+  <meta name="twitter:description" content="Comprehensive travel details, seasonal guides, and route tips across Uttarakhand.">
+  <meta name="twitter:image" content="https://exploreuttarakhand.example.com/images/hero-himalayas.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data: BreadcrumbList JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://exploreuttarakhand.example.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Destinations",
+        "item": "https://exploreuttarakhand.example.com/destinations.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Destination Details",
+        "item": "https://exploreuttarakhand.example.com/destination-details.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="Explore Uttarakhand Homepage">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Explore Uttarakhand</span>
+          <span class="brand-subtitle">Devbhoomi Travel Guide</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNavigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav id="primaryNavigation" aria-label="Primary Site Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="destinations.html" class="nav-link active">Destinations</a></li>
+          <li><a href="travel-guides.html" class="nav-link">Travel Guides</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="destinations.html" class="nav-link nav-cta">All Destinations</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumb" aria-label="Breadcrumb Trail">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+        <li class="breadcrumb-item"><a href="destinations.html">Destinations</a></li>
+        <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+        <li class="breadcrumb-item" aria-current="page" id="dynBreadcrumb">Auli</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Main Content Container with dynamic bindings -->
+  <main id="main-content">
+    <div id="dynamicDetailContainer">
+      
+      <!-- Hero Banner -->
+      <section class="detail-hero" aria-label="Destination Banner">
+        <img id="dynHeroImg"
+             src="images/hero-detail-auli.jpg"
+             srcset="images/destination-auli-snow.jpg 1200w, images/hero-detail-auli.jpg 2400w"
+             sizes="100vw"
+             alt="Snow-covered ski slopes of Auli with majestic Nanda Devi Himalayan peak in background"
+             class="detail-hero-media"
+             width="2400"
+             height="1340"
+             fetchpriority="high">
+        <div class="detail-hero-overlay">
+          <div class="container">
+            <div class="detail-hero-meta" style="margin-bottom: 8px;">
+              <span class="detail-badge-pill" id="dynRegion">Chamoli District, Garhwal</span>
+              <span class="detail-badge-pill" id="dynCategory">Hill Stations, Adventure, Trekking</span>
+            </div>
+            <h1 class="detail-hero-title" id="dynTitle">Auli</h1>
+            <p style="color: #f3f4f6; max-width: 720px; font-size: 1.1rem; margin-bottom: 0;">
+              Discover authentic travel insights, verified seasonal advice, and route guidance for this Himalayan destination.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content & Sidebar Layout -->
+      <div class="container">
+        <div class="detail-layout">
+          
+          <!-- Main Content Column -->
+          <div class="detail-content">
+            
+            <!-- Overview -->
+            <article class="detail-section">
+              <h2>Overview & Geographical Setting</h2>
+              <p id="dynOverview">
+                Auli is India's premier high-altitude ski resort nestled in the Chamoli district of Uttarakhand. Flanked by pristine coniferous and oak forests, Auli offers breathtaking 360-degree panoramic vistas of Himalayan giants including Nanda Devi (India's second highest peak), Kamet, Mana Parvat, and Dunagiri.
+              </p>
+            </article>
+
+            <!-- Attractions -->
+            <section class="detail-section">
+              <h2>Top Attractions & Landmarks</h2>
+              <div class="attractions-grid" id="dynAttractions">
+                <div class="attraction-card">
+                  <h3>Auli Artificial Lake</h3>
+                  <p>One of the world's highest man-made lakes, created to feed snow guns for the ski slopes during early winter.</p>
+                </div>
+                <div class="attraction-card">
+                  <h3>Joshimath-Auli Ropeway</h3>
+                  <p>A 4-kilometer long cable car journey offering sweeping views of the Alaknanda River gorge and snowy ridges.</p>
+                </div>
+                <div class="attraction-card">
+                  <h3>Gorson Bugyal</h3>
+                  <p>An expansive alpine meadow situated 3 km beyond Auli, ideal for beginner day treks amidst alpine flora.</p>
+                </div>
+                <div class="attraction-card">
+                  <h3>Chattrakund Lake</h3>
+                  <p>A tranquil small sweet-water lake hidden within dense oak and pine woods near Gorson Bugyal.</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Activities -->
+            <section class="detail-section">
+              <h2>Activities & Experiences</h2>
+              <ul class="activities-list" id="dynActivities">
+                <li class="activity-item">
+                  <svg class="activity-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Skiing and Snowboarding lessons under certified instructors (Jan - Mar)</span>
+                </li>
+                <li class="activity-item">
+                  <svg class="activity-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>High-altitude cable car ride over pine valleys and oak forests</span>
+                </li>
+                <li class="activity-item">
+                  <svg class="activity-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Scenic high-altitude photography of Nanda Devi and Trishul peaks</span>
+                </li>
+                <li class="activity-item">
+                  <svg class="activity-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Day trekking to Gorson Bugyal and Chattrakund alpine lake</span>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Travel Tips -->
+            <section class="detail-section">
+              <h2>Practical Travel Tips & Route Guidance</h2>
+              <div class="tips-box">
+                <h3>Traveler's Advisory</h3>
+                <p id="dynTips">
+                  Winter temperatures can plunge below -8°C. Carry multi-layered thermal wear, polarized sunglasses, and snow boots. During peak snowfall, vehicles without snow chains may be restricted at Joshimath, requiring travelers to take the cable car up to Auli.
+                </p>
+              </div>
+            </section>
+
+            <!-- Eco-Tourism Guidelines -->
+            <section class="detail-section">
+              <div class="eco-box">
+                <h4>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  Responsible Mountain Travel
+                </h4>
+                <ul id="dynEcoTips">
+                  <li>Keep the delicate alpine bugyals free of plastics, bottles, and snack wrappers.</li>
+                  <li>Hire local certified ski instructors and homestay hosts from Joshimath to support the mountain community.</li>
+                  <li>Stay strictly on marked trails to prevent soil erosion on delicate alpine slopes.</li>
+                </ul>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Sidebar Column -->
+          <aside class="detail-sidebar" aria-label="Destination Fast Facts">
+            <div class="fact-widget">
+              <h3>Fast Facts</h3>
+              <ul class="fact-list">
+                <li class="fact-item">
+                  <span class="fact-label">Altitude</span>
+                  <span class="fact-value" id="dynAltitude">2,800 to 3,050 meters (9,186 to 10,000 ft)</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Best Time to Visit</span>
+                  <span class="fact-value" id="dynBestTime">Late December to March (Skiing); April to June (Alpine Greenery)</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Nearest Railway Station</span>
+                  <span class="fact-value" id="dynStation">Rishikesh Railway Station (approx. 250 km)</span>
+                </li>
+                <li class="fact-item">
+                  <span class="fact-label">Nearest Airport</span>
+                  <span class="fact-value" id="dynAirport">Jolly Grant Airport, Dehradun (approx. 270 km)</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Dedicated Destination Switcher -->
+            <div class="fact-widget">
+              <h3>Explore Other Destinations</h3>
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <a href="nainital.html" class="destination-link-btn">&bull; Nainital Lake City (Dedicated Guide)</a>
+                <a href="mussoorie.html" class="destination-link-btn">&bull; Mussoorie Queen of Hills (Dedicated Guide)</a>
+                <a href="rishikesh.html" class="destination-link-btn">&bull; Rishikesh Yoga & Rafting (Dedicated Guide)</a>
+                <a href="jim-corbett.html" class="destination-link-btn">&bull; Jim Corbett Tiger Reserve (Dedicated Guide)</a>
+                <a href="destination-details.html?id=kedarnath" class="destination-link-btn">&bull; Kedarnath Sacred Jyotirlinga</a>
+                <a href="destination-details.html?id=chopta" class="destination-link-btn">&bull; Chopta Mini Switzerland & Trek</a>
+                <a href="destination-details.html?id=valley-of-flowers" class="destination-link-btn">&bull; Valley of Flowers National Park</a>
+                <a href="destination-details.html?id=haridwar" class="destination-link-btn">&bull; Haridwar Sacred Ghats</a>
+              </div>
+            </div>
+
+            <!-- Back to Catalog -->
+            <div class="fact-widget" style="text-align: center; background: var(--color-cream-surface);">
+              <p style="font-size: 0.9rem; margin-bottom: 12px;">Looking for something else?</p>
+              <a href="destinations.html" class="btn btn-outline btn-sm" style="width: 100%;">Browse Destinations Catalog</a>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <div class="brand-emblem" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="color: white;">Explore Uttarakhand</span>
+              <span class="brand-subtitle" style="color: #6ee7b7;">Devbhoomi Travel Guide</span>
+            </div>
+          </div>
+          <p>
+            An authoritative, eco-conscious digital guide dedicated to showcasing the natural splendor, rich heritage, and Himalayan majesty of Uttarakhand, India.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">All Destinations</a></li>
+            <li><a href="travel-guides.html">Travel Guides & Tips</a></li>
+            <li><a href="about.html">About & Contact</a></li>
+            <li><a href="sitemap.xml">XML Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Top Destinations</h3>
+          <ul class="footer-links">
+            <li><a href="nainital.html">Nainital Lake City</a></li>
+            <li><a href="mussoorie.html">Mussoorie Queen of Hills</a></li>
+            <li><a href="rishikesh.html">Rishikesh Yoga & Rafting</a></li>
+            <li><a href="destination-details.html?id=auli">Auli Ski Resort</a></li>
+            <li><a href="destination-details.html?id=kedarnath">Kedarnath Holy Shrine</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Responsible Travel</h3>
+          <ul class="footer-links">
+            <li><a href="about.html#responsible-tourism">Leave No Trace Principles</a></li>
+            <li><a href="about.html#responsible-tourism">Plastic-Free Himalayas</a></li>
+            <li><a href="about.html#responsible-tourism">Supporting Mountain Homestays</a></li>
+            <li><a href="travel-guides.html#trekking-guide">High-Altitude Safety Guide</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Explore Uttarakhand. Built for academic purposes at IIIT Nagpur.
+        </div>
+        <div class="footer-academic-badge">
+          UI/UX & On-Page SEO Assignment | Indian Institute of Information Technology, Nagpur
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
